@@ -50,6 +50,8 @@ dependencies {
     // Kotest: organiza los casos de prueba y compara resultados (shouldBe).
     testImplementation("io.kotest:kotest-runner-junit5:6.2.7")
     testImplementation("io.kotest:kotest-assertions-core:6.2.7")
+    // kotlin-reflect: Kotest lo necesita para descubrir las pruebas desde el botón Run de Android Studio.
+    testImplementation("org.jetbrains.kotlin:kotlin-reflect:2.4.0")
     // MockK: crea dobles de prueba para dependencias como PokeApi o PokemonRepository.
     testImplementation("io.mockk:mockk:1.14.12")
     // Mantiene en marcha las pruebas JUnit 4 que el proyecto ya tiene (PokedexTest).
